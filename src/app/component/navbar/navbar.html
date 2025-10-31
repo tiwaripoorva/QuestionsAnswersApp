@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a [routerLink]="(isLoggedIn$ | async) ? '/viewQuestions' : '/login'" 
+           routerLinkActive="active" 
+           class="logo">Q&A Tech Prep</a>
+    </div>
+
+    <div class="navbar-links">
+
+        <ng-container *ngIf="isLoggedIn$ | async">
+            <a routerLink="/viewQuestions" routerLinkActive="active" class="nav-link">View Questions</a>
+            <a routerLink="/addQuestion" routerLinkActive="active" class="nav-link">Add Question</a>
+            <a routerLink="/addTechnology" routerLinkActive="active" class="nav-link">Add Technology</a>
+        </ng-container>
+
+        </div>
+</nav>

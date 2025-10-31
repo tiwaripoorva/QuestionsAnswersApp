@@ -1,0 +1,165 @@
+/* Color Palette (Define variables for easy changes) */
+:root {
+    --color-dark-bg: #1e293b; /* Dark Slate Blue/Gray for background */
+    --color-primary: #3b82f6; /* A vibrant blue for accents and primary buttons */
+    --color-text-light: #f1f5f9; /* Near-white for main text */
+    --color-text-secondary: #94a3b8; /* Lighter gray for secondary text/links */
+    --color-danger: #ef4444; /* Red for the logout button */
+    --padding-base: 1.5rem; /* Base padding for the navbar */
+}
+
+/* 1. Base Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes brand to left, links to right */
+    align-items: center;
+    background-color: var(--color-dark-bg);
+    padding: 0 var(--padding-base); /* Vertical padding is handled by logo/links height */
+    height: 60px; /* Standard professional height */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
+    position: sticky; /* Keeps navbar at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+/* 2. Logo/Brand Styling */
+.navbar-brand .logo {
+    font-size: 1.5rem; /* Larger and prominent */
+    font-weight: 700; /* Bold */
+    color: var(--color-primary); /* Use primary color to make the brand stand out */
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.2s ease;
+    letter-spacing: -0.5px; /* Tighten up the text slightly */
+}
+
+.navbar-brand .logo:hover {
+    color: var(--color-text-light); /* Slight change on hover */
+}
+
+/* 3. Main Link Group */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Space between the main links and auth buttons */
+}
+
+/* 4. Navigation Links (View, Add Question/Tech) */
+.nav-link {
+    color: var(--color-text-secondary); /* Less prominent color */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+/* Underline effect on hover/active */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-text-light); /* Highlight text on hover */
+}
+
+.nav-link:hover::after,
+.nav-link.active::after { /* You might need to add a routerLinkActive class (e.g., .active) in your HTML for this */
+    width: 100%;
+}
+
+/* 5. Authentication Buttons Container */
+.auth-buttons {
+    display: flex;
+    gap: 0.75rem; /* Space between the two buttons */
+    margin-left: 1.5rem; /* Space between the main links and the buttons */
+}
+
+/* 6. Button Base Styling */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem; /* Medium rounded corners */
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    text-decoration: none; /* Important for routerLink buttons/anchors */
+}
+
+/* 7. Login/Signup Button Styles (Public) */
+.btn-login, .btn-signup {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark-bg); /* Dark text on primary background */
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Glow effect */
+}
+
+/* 8. Logout Button Style (Authenticated) */
+.btn-logout {
+    background-color: var(--color-danger);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-danger);
+}
+
+.btn-logout:hover {
+    background-color: #dc2626; /* Slightly darker red */
+    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3); /* Subtle red glow */
+}
+
+/* --- Optional: Mobile Responsiveness (Basic) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack everything vertically on small screens */
+        height: auto;
+        padding: 0.75rem var(--padding-base);
+    }
+    
+    .navbar-links {
+        flex-direction: column; /* Stack the links */
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    
+    /* Make the authenticated links take full width and stack */
+    .nav-link {
+        width: 100%;
+        padding: 0.5rem var(--padding-base);
+        border-bottom: 1px solid #334155; /* Separator */
+    }
+
+    .nav-link::after {
+        content: none; /* Remove the underline effect on mobile */
+    }
+
+    .auth-buttons {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-left: 0;
+        justify-content: space-around; /* Spread buttons out */
+    }
+
+    .btn {
+        flex-grow: 1; /* Make buttons take equal width */
+    }
+
+    /* Keep brand and links separate at the top */
+    .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,190 @@
+/* --- 1. FIXED: MUST BE THE FIRST RULE --- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/* General body reset/styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* --- Header Styling --- */
+.main-header {
+    width: 100%;
+    background-color: #333; /* Dark background for contrast */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.header-content span {
+    color: #fff;
+    font-size: 1.5em; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --- Background and Layout --- */
+.home-container {
+    background-image: url('../../../../public/BgImage.jpeg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    
+    /* Dark overlay for better text contrast */
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+    /* Center the welcome-box content vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Compensate for the header height */
+    padding-top: 50px; 
+}
+
+/* --- Welcome Box (The main content area) --- */
+.welcome-box {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.welcome-box h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.welcome-box p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+/* --- CTA Button Styles --- */
+.cta-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    background-color: #007bff; /* Primary Blue */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.btn-signup {
+    background-color: #4ec7f3; /* Light Blue/Teal */
+    color: #333;
+    box-shadow: 0 4px 10px rgba(78, 199, 243, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- FLIP CONTAINER STYLES (Dynamic Text) --- */
+
+#container {
+    color: #999; /* Static text color */
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    
+    /* Ensure normal document flow */
+    position: static; 
+    
+    width: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto; 
+}
+
+#flip {
+    height: 45px; /* Must match the inner div height */
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+/* Word Slot Styles */
+#flip > div > div {
+  color: white; 
+  padding: 4px 12px;
+  height: 45px; /* Height of the visible word */
+  margin-bottom: 45px; /* Creates the 90px total step (45 + 45) */
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  border-radius: 4px;
+}
+
+/* Color assignment for the 5 slots */
+#flip div:nth-child(1) div { background: #4ec7f3; } /* Angular */
+#flip div:nth-child(2) div { background: #42c58a; } /* DSA */
+#flip div:nth-child(3) div { background: #f39c12; } /* System Design */
+#flip div:nth-child(4) div { background: #e74c3c; } /* Interviews */
+#flip div:nth-child(5) div { background: #9b59b6; } /* Coding */
+
+
+/* Animation Keyframes (CORRECTED 90px STEP SIZE) */
+/* Animation Keyframes (CORRECTED FOR SLOWER, EVEN SPEED) */
+#flip > div {
+  /* Increased from 15s to 25s for slower speed */
+  animation: flip 25s cubic-bezier(0.25, 0.5, 0.75, 1.5) 0s infinite;
+}
+
+/* The margin-top values jump by the correct 90px step */
+@keyframes flip {
+  /*
+    Each word gets 5 seconds: 4.5s visible, 0.5s transition
+    In percentages (25s cycle): 4.5s = 18%, 0.5s = 2%
+    Total cycle: 5 words * 20% = 100%
+  */
+
+  /* 1. Angular (0px) - Visible from 0% to 18% */
+  0%, 18% { margin-top: 0px; } 
+
+  /* 2. DSA (-90px) - Visible from 20% to 38% */
+  20% { margin-top: -90px; } /* Start Transition (2% duration) */
+  22%, 38% { margin-top: -90px; }
+  
+  /* 3. System Design (-180px) - Visible from 40% to 58% */
+  40% { margin-top: -180px; } /* Start Transition (2% duration) */
+  42%, 58% { margin-top: -180px; } 
+  
+  /* 4. Interviews (-270px) - Visible from 60% to 78% */
+  60% { margin-top: -270px; } /* Start Transition (2% duration) */
+  62%, 78% { margin-top: -270px; } 
+  
+  /* 5. Coding (-360px) - Visible from 80% to 98% */
+  80% { margin-top: -360px; } /* Start Transition (2% duration) */
+  82%, 98% { margin-top: -360px; } 
+  
+  /* Reset and Loop */
+  100% { margin-top: 0px; } 
+}

@@ -1,0 +1,98 @@
+/* --- Theme Variables (Consistent with your other files) --- */
+:root {
+    --primary-blue: #007bff; 
+    --secondary-teal: #4ec7f3; 
+    --text-light: #fff;
+    --background-dark: #2c3e50; /* Dark background */
+    --error-red: #e74c3c;
+}
+
+/* --- Container & Layout (Full Screen Dark Background) --- */
+
+.error-container {
+    min-height: 100vh;
+    width: 100%;
+    
+    /* Use the dark theme background */
+    background-color: var(--background-dark); 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-light); /* Light text on dark background */
+}
+
+/* --- Error Box Content --- */
+
+.error-box {
+    max-width: 600px;
+    width: 100%;
+}
+
+.error-code {
+    /* Dramatic, large font for the 404 number */
+    font-size: 10em;
+    font-weight: 700;
+    margin: 0;
+    
+    /* Use the primary blue/teal theme color */
+    color: var(--secondary-teal); 
+    
+    /* Subtle shadow/glow for depth */
+    text-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.error-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: -10px; /* Pull closer to the code */
+    margin-bottom: 20px;
+    color: var(--error-red); /* Use red to signify an error state */
+}
+
+.error-message {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* --- Action Buttons (The same style as your CTA buttons) --- */
+
+.error-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Base button style (reusing your theme's .btn class if possible) */
+/* Re-define the minimum required button styles for clarity */
+.btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Crucial for <a> elements */
+}
+
+.btn-login {
+    background-color: var(--primary-blue);
+    color:#333;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.btn-signup {
+    background-color: var(--secondary-teal);
+    color: #333; /* Dark text on light button */
+    box-shadow: 0 4px 10px rgba(78, 199, 243, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

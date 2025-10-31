@@ -1,0 +1,26 @@
+<app-navbar></app-navbar> 
+
+
+
+<main class="dashboard-main">
+    <div class="dashboard-ui">
+        
+        <div class="dashboard-header-box">
+            <header class="dashboard-header">
+                <h1>🚀 Master Your Tech Interview, One Question at a Time!</h1>
+                <p>Your comprehensive prep platform for conquering technical knowledge.</p>
+            </header>
+
+            <div class="dashboard-nav-strip">
+                <button routerLink="viewQuestions" routerLinkActive="active" class="btn-dash">View Questions</button>
+                <button routerLink="addQuestion" routerLinkActive="active" class="btn-dash">Add Question</button>
+                <button routerLink="addTechnology" routerLinkActive="active" class="btn-dash">Add Technology</button>
+            </div>
+        </div>
+        <div class="dashboard-content-area">
+            <router-outlet></router-outlet>
+        </div>
+        </div>
+</main>
+    
+<app-footer></app-footer>

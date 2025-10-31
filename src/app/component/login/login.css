@@ -1,0 +1,147 @@
+/* Color Variables - Ensure these match your global definitions */
+:root {
+    --color-surface: #2d384c; /* Card background color (lighter than page bg) */
+    --color-primary: #3b82f6; /* Blue accent */
+    --color-dark-bg: #1e293b; /* Main background color */
+    --color-text-light: #f1f5f9;
+    --color-text-secondary: #94a3b8;
+    --color-shadow: rgba(0, 0, 0, 0.7); /* Stronger shadow for lifting effect */
+}
+
+/* --- Overall Centering and Background --- */
+/* The host element makes the card center vertically and horizontally in the viewport */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 2rem;
+    background-color: transparent; /* Use transparent so the animated-bg shows through */
+}
+
+/* --- Login Card Container --- */
+/* This is your main attractive box */
+.w-full.max-w-md {
+    width: 100%;
+    max-width: 450px; 
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 32px; 
+    /* Strong Shadow and Blue Glow to make the box POP */
+    box-shadow: 0 20px 40px var(--color-shadow), 0 0 15px rgba(59, 130, 246, 0.4); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10; /* Ensure it's above the background animation */
+}
+
+/* --- Typography and Header --- */
+h2 {
+    font-size: 2.5rem; 
+    font-weight: 800; 
+    color: var(--color-text-light);
+    text-align: center;
+    margin-bottom: 1.5rem; 
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Form & Spacing --- */
+.space-y-6 > div {
+    margin-bottom: 1.5rem; 
+}
+
+/* --- Label Styling --- */
+label {
+    display: block;
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem; 
+}
+
+/* --- Input Field Styling --- */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.75rem; 
+    border-radius: 8px; 
+    background-color: var(--color-dark-bg); /* Darker input background for contrast */
+    color: var(--color-text-light);
+    border: 1px solid #475569; 
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+/* --- IMPROVED FOCUS STATE (The "Box" Improvement) --- */
+input:focus {
+    outline: none;
+    border-color: var(--color-primary); 
+    /* Thicker, brighter blue glow for an urgent, modern look */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); 
+}
+
+/* --- Error Message Display --- */
+.p-3.bg-red-100 { /* Targeting the error div via its classes */
+    padding: 0.75rem; 
+    background-color: #3e282d; /* Dark red background */
+    border: 1px solid #dc2626; /* Strong red border */
+    color: #fca5a5; /* Lighter red text */
+    border-radius: 8px;
+    font-size: 0.875rem; 
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Login Button --- */
+button[type="submit"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1rem; 
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem; 
+    font-weight: 700;
+    text-transform: uppercase; /* Makes it look professional and urgent */
+    color: var(--color-text-light);
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.6);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb; 
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.7);
+}
+
+/* --- Signup Link --- */
+.text-center.text-sm {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.text-center.text-sm a {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.text-center.text-sm a:hover {
+    color: #93c5fd; 
+    text-decoration: underline;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 600px) {
+    .w-full.max-w-md {
+        padding: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}

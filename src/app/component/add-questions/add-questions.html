@@ -1,0 +1,75 @@
+<div class="notes-container">
+    <div class="tech-select-container">
+        <h2>Add Question to Existing Technology</h2>
+    </div>
+    
+    <div *ngIf="isLoading" class="loading">
+        Loading technologies...
+    </div>
+
+    <div *ngIf="!isLoading" class="question-card">
+        <div class="question-display">
+            <h3>Select Technology:</h3>
+            
+            <div class="controls">
+                <select 
+                    id="tech-select" 
+                    [(ngModel)]="selectedTech"
+                    name="selectedTech"
+                    required
+                    [disabled]="isLoading"
+                >
+                    <option value="" disabled>-- Select Technology --</option>
+                    <option *ngFor="let tech of availableTechnologies" [value]="tech">{{ tech | uppercase }}</option>
+                </select>
+            </div>
+        </div>
+
+        <div *ngIf="message" class="answer-display" [ngClass]="{'success-message': isSuccess, 'error-message': !isSuccess}">
+            <p><strong>Status:</strong> {{ message }}</p>
+        </div>
+
+        <div class="question-display" *ngIf="selectedTech">
+            <h3>Question Details for: {{ selectedTech | uppercase }}</h3>
+        </div>
+
+        <form (ngSubmit)="onSubmit()" *ngIf="selectedTech && !isLoading">
+            <div class="form-group">
+                <label for="question">Question Text</label>
+                <textarea 
+                    id="question" 
+                    name="question"
+                    [(ngModel)]="questionData.question" 
+                    required
+                    rows="3"
+                    placeholder="Enter the practice question..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="answer">Answer Text</label>
+                <textarea 
+                    id="answer" 
+                    name="answer"
+                    [(ngModel)]="questionData.answer" 
+                    required
+                    rows="5"
+                    placeholder="Enter the detailed answer..."
+                ></textarea>
+            </div>
+            
+            <div class="controls">
+                <button type="submit" [disabled]="!questionData.question.trim() || !questionData.answer.trim() || isLoading || isDuplicate">
+                    {{ isLoading ? 'Checking/Adding...' : 'Add Question' }}
+                </button>
+            </div>
+            <p *ngIf="isDuplicate" class="duplicate-warning">
+                ⚠️ Warning: Question text is an exact match to an existing one in this category.
+            </p>
+        </form>
+        
+        <div *ngIf="!selectedTech && availableTechnologies.length > 0" class="error-message">
+            <p>Please select a technology from the dropdown above.</p>
+        </div>
+    </div>
+</div>

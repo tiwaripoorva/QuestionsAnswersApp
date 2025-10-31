@@ -1,0 +1,49 @@
+<div>
+    
+    <div >
+        <label for="tech-select">Select Technology:</label>
+        <select id="tech-select" [(ngModel)]="selectedTech" (change)="onTechChange()" name="selectedTech">
+            <option value="java">Java Questions</option>
+            <option value="python">Python Questions</option>
+            <option value="cpp">C++ Questions</option>
+            <option value="dotnet">.NET Questions</option>
+        </select>
+    </div>
+    
+    <div *ngIf="isLoading" class="loading">
+        Loading questions...
+    </div>
+
+    <div *ngIf="hasError" class="error">
+        Error loading questions. Please check your server connection (Port 3000).
+    </div>
+
+    <div *ngIf="!isLoading && !hasError && Questions.length === 0" class="no-data">
+        No questions available for {{selectedTech | uppercase}}. Time to add some!
+    </div>
+
+    <div *ngIf="!isLoading && !hasError && Questions.length > 0" class="question-card">
+        <div class="question-display">
+            <h2>Question {{currentQuestionIndex + 1}} of {{Questions.length}}:</h2>
+            <h3>{{currentQuestion.question}}</h3>
+        </div>
+
+        <div *ngIf="showAnswer" class="answer-display">
+            <p><strong>Answer:</strong> {{currentQuestion.answer}}</p>
+        </div>
+
+        <div class="controls">
+            <button (click)="previousQuestion()" [disabled]="Questions.length <= 1">
+                Previous
+            </button>
+            
+            <button (click)="toggleAnswer()">
+                {{ showAnswer ? 'Hide Answer' : 'Show Answer' }}
+            </button>
+
+            <button (click)="nextQuestion()" [disabled]="Questions.length <= 1">
+                Next
+            </button>
+        </div>
+    </div>
+</div>

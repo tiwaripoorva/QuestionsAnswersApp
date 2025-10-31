@@ -1,0 +1,82 @@
+/* --- Footer Styling --- */
+.main-footer {
+    background-color: #222; /* Slightly darker than the header for distinction */
+    color: #fff;
+    padding: 20px 20px 0; /* Padding at top and sides, none at the bottom yet */
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    justify-content: space-between; /* Spreads sections out */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px; /* Space above the copyright bar */
+}
+
+.footer-section {
+    flex: 1; /* Allows sections to grow equally */
+    min-width: 200px; /* Prevents sections from getting too narrow */
+    margin-bottom: 20px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+    color: #00bcd4; /* A tech-like accent color */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    padding-right: 20px;
+    color: #ccc; /* Light gray for readability */
+}
+
+/* Links List Style */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ccc; /* Light gray for subtle links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff; /* Highlight on hover */
+    text-decoration: underline;
+}
+
+/* Social Icons Style */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-link {
+    color: #fff;
+    font-size: 1.5em; /* Large, clickable icons */
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #00bcd4; /* Match the accent color on hover */
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    border-top: 1px solid #444; /* Separator line */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #aaa;
+}

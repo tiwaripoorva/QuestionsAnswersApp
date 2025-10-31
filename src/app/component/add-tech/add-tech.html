@@ -1,0 +1,47 @@
+<div class="notes-container">
+    <div class="tech-select-container">
+        <h2>Add New Technology</h2>
+    </div>
+
+    <div class="loading" *ngIf="isLoading">
+        Processing technology request...
+    </div>
+
+    <div *ngIf="!isLoading" class="question-card">
+        
+        <div class="question-display">
+            
+            <p class="subheading">Please enter the name of the new technology.</p>
+        </div>
+
+        <div *ngIf="message" class="answer-display" [ngClass]="{'success-message': isSuccess, 'error-message': !isSuccess && !showExistingTechPrompt}">
+            <p><strong>Status:</strong> {{ message }}</p>
+        </div>
+
+        <div *ngIf="showExistingTechPrompt" class="answer-display prompt-box">
+            <p><strong>Technology Exists:</strong> Do you want to add a question to <strong>{{ existingTechName }}</strong> now?</p>
+            <div class="controls prompt-controls">
+                <button (click)="onYesClick()" class="btn-yes">Yes</button>
+                <button (click)="onNoClick()" class="btn-no">No, Start Over</button>
+            </div>
+        </div>
+        
+        <div *ngIf="!showExistingTechPrompt" class="controls">
+            <div class="form-group">
+                <label for="techName">Technology Name Input:</label>
+                <input 
+                    type="text" 
+                    id="techName" 
+                    name="techName"
+                    [(ngModel)]="techName" 
+                    required
+                    placeholder="Enter Technology Name (e.g., Rust)"
+                >
+            </div>
+            
+            <button (click)="addTechnology()" [disabled]="!techName.trim() || isLoading">
+                {{ isLoading ? 'Adding...' : 'Add Technology' }}
+            </button>
+        </div>
+    </div>
+</div>

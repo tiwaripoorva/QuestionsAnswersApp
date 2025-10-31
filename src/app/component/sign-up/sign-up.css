@@ -1,0 +1,153 @@
+/* Color Variables - Ensure these match your global definitions */
+:root {
+    --color-surface: #2d384c; /* Card background color (lighter than page bg) */
+    --color-primary: #3b82f6; /* Blue accent */
+    --color-dark-bg: #1e293b; /* Main background color */
+    --color-text-light: #f1f5f9;
+    --color-text-secondary: #94a3b8;
+    --color-shadow: rgba(0, 0, 0, 0.7); /* Stronger shadow for lifting effect */
+}
+
+/* --- Overall Centering and Background --- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 2rem;
+    background-color: transparent; /* Allows the animated background to show */
+}
+
+/* --- Signup Card Box (The "Box") --- */
+.auth-form-box {
+    width: 100%;
+    max-width: 450px; 
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 32px; 
+    /* Strong Shadow and Blue Glow to make the box POP */
+    box-shadow: 0 20px 40px var(--color-shadow), 0 0 15px rgba(59, 130, 246, 0.4); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10; 
+}
+
+/* --- Header Styling --- */
+.auth-form-box h2 {
+    font-size: 2.25rem; /* Slightly smaller than login for less urgency, but still bold */
+    font-weight: 700; 
+    color: var(--color-text-light);
+    text-align: center;
+    margin-bottom: 2rem; 
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Form Groups and Spacing --- */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* --- Label Styling --- */
+.form-group label {
+    display: block;
+    font-size: 0.9rem; 
+    font-weight: 600; 
+    color: var(--color-text-secondary);
+    margin-bottom: 0.4rem; 
+}
+
+/* --- Input Field Styling --- */
+.form-group input {
+    width: 100%;
+    padding: 0.65rem 0.8rem; 
+    border-radius: 8px; 
+    background-color: var(--color-dark-bg); /* Darker input background for contrast */
+    color: var(--color-text-light);
+    border: 1px solid #475569; 
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder {
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+/* --- ENHANCED FOCUS STATE (The Improvement) --- */
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-primary); 
+    /* Thicker, brighter blue glow for an urgent, modern look */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); 
+}
+
+/* --- Error Message Styling --- */
+.error-message {
+    padding: 0.75rem; 
+    background-color: #3e282d; /* Dark red background */
+    border: 1px solid #dc2626; /* Strong red border */
+    color: #fca5a5; /* Lighter red text */
+    border-radius: 8px;
+    font-size: 0.875rem; 
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Submit Button --- */
+.btn-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1rem; 
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem; 
+    font-weight: 700;
+    text-transform: uppercase; 
+    color: var(--color-text-light);
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.6);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 1.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #2563eb; 
+    transform: translateY(-2px); 
+}
+
+.btn-submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.7);
+}
+
+/* --- Switch Auth Link (Log In here) --- */
+.switch-auth {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+}
+
+.switch-auth a {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.switch-auth a:hover {
+    color: #93c5fd; 
+    text-decoration: underline;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 600px) {
+    .auth-form-box {
+        padding: 1.5rem;
+    }
+    .auth-form-box h2 {
+        font-size: 2rem;
+    }
+}
