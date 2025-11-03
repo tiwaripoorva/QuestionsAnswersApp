@@ -1,0 +1,539 @@
+[{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf372e"
+  },
+  "question": "What is C++?",
+  "answer": "A powerful, compiled, middle-level programming language that supports both procedural and object-oriented programming (OOP)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf372f"
+  },
+  "question": "What are the four pillars of **OOP** in C++?",
+  "answer": "**Encapsulation**, **Inheritance**, **Polymorphism**, and **Abstraction**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3730"
+  },
+  "question": "What is the difference between a **`struct`** and a **`class`** in C++?",
+  "answer": "By default, members of a **`struct`** are **`public`**, while members of a **`class`** are **`private`**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3731"
+  },
+  "question": "What is **Encapsulation**?",
+  "answer": "The mechanism of binding data and the functions that operate on that data into a single unit (the class), restricting direct access to the data."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3732"
+  },
+  "question": "What is a **Pointer**?",
+  "answer": "A variable that holds the **memory address** of another variable. Declared using the asterisk *."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3733"
+  },
+  "question": "What is a **Reference**?",
+  "answer": "An **alias** or an alternative name for an existing variable. Declared using the ampersand &."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3734"
+  },
+  "question": "What is the difference between **`new`** and **`malloc()`**?",
+  "answer": "**`new`** is an operator that calls the constructor and returns a **type-safe** pointer. **`malloc()`** is a function that returns a void pointer and does **not** call the constructor."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3735"
+  },
+  "question": "What is **Polymorphism**?",
+  "answer": "The ability to present the same interface for different underlying forms (types or data structures). Achieved via **virtual functions** and **function/operator overloading**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3736"
+  },
+  "question": "What is a **Virtual Function**?",
+  "answer": "A member function declared within a base class using the virtual keyword and redefined (overridden) by a derived class, enabling **runtime polymorphism**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3737"
+  },
+  "question": "What is an **Abstract Class**?",
+  "answer": "A class that cannot be instantiated (cannot create objects). It contains at least one **pure virtual function** (= 0)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3738"
+  },
+  "question": "What is a **Pure Virtual Function**?",
+  "answer": "A virtual function in a base class that has no definition (= 0), forcing derived classes to provide an implementation."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3739"
+  },
+  "question": "What is a **Copy Constructor**?",
+  "answer": "A constructor that initializes an object using another object of the same class, typically taking a const reference as an argument (ClassName(const ClassName& obj))."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf373a"
+  },
+  "question": "What is a **Destructor**?",
+  "answer": "A special member function called automatically when an object goes out of scope or is explicitly deleted, used for **cleanup** and deallocating memory."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf373b"
+  },
+  "question": "What is **`this`** pointer?",
+  "answer": "An **implicit** pointer that points to the **current object** instance for which a member function is being called."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf373c"
+  },
+  "question": "What is **Stack** vs. **Heap** memory?",
+  "answer": "**Stack** is used for static memory allocation (local variables, function calls), managed by the CPU. **Heap** is used for dynamic memory allocation (via `new`), managed by the programmer."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf373d"
+  },
+  "question": "What is **Scope Resolution Operator** (::)?",
+  "answer": "Used to define or access a member of a class outside the class definition, or to access a global variable hidden by a local variable."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf373e"
+  },
+  "question": "What is **Operator Overloading**?",
+  "answer": "Giving an existing C++ operator (like +, -, *) a **special meaning** for a user-defined data type (class)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf373f"
+  },
+  "question": "What is an **`inline`** function?",
+  "answer": "A function requested by the programmer to be expanded (copied) at the point of its call during compilation, potentially reducing function call overhead."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3740"
+  },
+  "question": "What is a **Friend Function**?",
+  "answer": "A function that is not a member of a class but is granted access to the **`private`** and **`protected`** members of that class."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3741"
+  },
+  "question": "What is the **`const`** keyword used for?",
+  "answer": "To declare a variable as read-only (value cannot be changed), or to specify that a function will not modify the object it is called on (const correctness)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3742"
+  },
+  "question": "What is **Namespace**?",
+  "answer": "A declarative region that provides a scope for the identifiers (names of types, functions, etc.) inside it, preventing name collisions."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3743"
+  },
+  "question": "What is **STL** (Standard Template Library)?",
+  "answer": "A set of C++ template classes providing common programming data structures and functions, such as containers, iterators, algorithms, and function objects."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3744"
+  },
+  "question": "What is a **Template**?",
+  "answer": "A feature that allows writing generic programs. They enable a function or class to operate on different data types **without** being rewritten for each type."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3745"
+  },
+  "question": "What is the difference between `delete` and `delete[]`?",
+  "answer": "**`delete`** is used to deallocate memory for a **single object** allocated with `new`. **`delete[]`** is used to deallocate memory for an **array** allocated with `new[]`."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3746"
+  },
+  "question": "Can C++ support **Multiple Inheritance**?",
+  "answer": "Yes. A class can inherit properties from more than one base class. This can lead to the **Diamond Problem**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3747"
+  },
+  "question": "What is the **Diamond Problem**?",
+  "answer": "An ambiguity arising from multiple inheritance where a class inherits from two classes that have a common ancestor, leading to duplicate base class members."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3748"
+  },
+  "question": "How is the **Diamond Problem** solved?",
+  "answer": "Using **Virtual Inheritance** (the `virtual` keyword when specifying base classes)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3749"
+  },
+  "question": "What is **`std::vector`**?",
+  "answer": "A dynamic array container from the STL that can resize itself automatically when elements are added or removed."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf374a"
+  },
+  "question": "What are **Access Specifiers**?",
+  "answer": "Keywords (**`public`**, **`private`**, **`protected`**) that determine the accessibility or visibility of class members."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf374b"
+  },
+  "question": "What is **Pass by Value**?",
+  "answer": "A method of passing arguments where a **copy** of the argument's value is passed to the function, so the original variable is unchanged."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf374c"
+  },
+  "question": "What is **Pass by Reference**?",
+  "answer": "A method of passing arguments where the function receives an **alias** (reference) to the original variable, allowing the function to modify the original."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf374d"
+  },
+  "question": "What is **`std::unique_ptr`**?",
+  "answer": "A **Smart Pointer** that owns the object it points to and automatically deletes the object when the pointer goes out of scope, enforcing exclusive ownership."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf374e"
+  },
+  "question": "What is **`std::shared_ptr`**?",
+  "answer": "A **Smart Pointer** that manages memory for an object via a reference counting mechanism. Multiple shared pointers can point to the same object."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf374f"
+  },
+  "question": "What is **RAII** (Resource Acquisition Is Initialization)?",
+  "answer": "A C++ programming idiom where resource acquisition (like opening a file or locking a mutex) is done in a constructor, and resource release is done in the destructor."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3750"
+  },
+  "question": "What is **Exception Handling**?",
+  "answer": "The mechanism of dealing with runtime errors or unusual conditions in a controlled way, using **`try`**, **`catch`**, and **`throw`** blocks."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3751"
+  },
+  "question": "What is **L-value** and **R-value**?",
+  "answer": "**L-value** refers to an expression that designates a storage location (can appear on the left side of an assignment). **R-value** refers to a temporary value (can only appear on the right side)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3752"
+  },
+  "question": "What is **Move Semantics**?",
+  "answer": "Introduced in C++11, it allows resources to be efficiently **moved** from one object to another rather than performing an expensive deep copy. Uses **R-value references** (&&)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3753"
+  },
+  "question": "What is an **`override`** specifier?",
+  "answer": "Used in a derived class to explicitly indicate that a function is intended to **override** a virtual function in the base class, helping the compiler catch errors."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3754"
+  },
+  "question": "What is a **`final`** specifier?",
+  "answer": "When applied to a class, it prevents it from being inherited. When applied to a virtual function, it prevents it from being overridden by derived classes."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3755"
+  },
+  "question": "What is **Type Casting** in C++?",
+  "answer": "The conversion of an object from one data type to another. C++ provides four specialized cast operators: `static_cast`, `dynamic_cast`, `reinterpret_cast`, and `const_cast`."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3756"
+  },
+  "question": "What does **`static_cast`** do?",
+  "answer": "Used for conversions that are related, like converting a non-const object, or converting between related class pointers (upcasting)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3757"
+  },
+  "question": "What does **`dynamic_cast`** do?",
+  "answer": "Used for safe conversion of pointers or references within an inheritance hierarchy (especially downcasting). It performs a runtime check and returns `nullptr` on failure."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3758"
+  },
+  "question": "What is a **`const_cast`**?",
+  "answer": "Used to add or remove the const or volatile qualifier from a variable, typically to allow a call to a function that mistakenly doesn't accept a const argument."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3759"
+  },
+  "question": "What does **`reinterpret_cast`** do?",
+  "answer": "Used for dangerous, low-level conversions between unrelated types (e.g., converting a pointer to an integer or vice-versa). It performs no checks."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf375a"
+  },
+  "question": "What is **`std::initializer_list`**?",
+  "answer": "A lightweight C++11 library feature that allows functions and classes (especially containers) to accept a variable number of arguments using the brace {} syntax."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf375b"
+  },
+  "question": "What is the use of the **`extern`** keyword?",
+  "answer": "Used for variable or function declarations to specify that the definition is provided in another translation unit (a different source file)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf375c"
+  },
+  "question": "What is a **Static Member Variable**?",
+  "answer": "A variable declared with the static keyword inside a class. There is **only one copy** of the variable shared among all objects of that class."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf375d"
+  },
+  "question": "What is a **Static Member Function**?",
+  "answer": "A member function that belongs to the class itself, not to any object. It can only access static members and global variables, and it has **no `this` pointer**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf375e"
+  },
+  "question": "What is **`volatile`** keyword?",
+  "answer": "A type qualifier that tells the compiler that the variable's value may be changed at any time by external factors (like an interrupt service routine), preventing the compiler from optimizing away memory accesses."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf375f"
+  },
+  "question": "What is the difference between `throw;` and `throw ex;` in a `catch` block?",
+  "answer": "**`throw;`** **re-throws** the original exception object. **`throw ex;`** (where `ex` is the caught exception object) throws a **copy** of the exception, potentially slicing its dynamic type."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3760"
+  },
+  "question": "What is a **Constructor Initializer List**?",
+  "answer": "A list following the constructor signature (before the body) used to initialize member variables, especially for const members, references, and base class constructors."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3761"
+  },
+  "question": "What is **`std::map`**?",
+  "answer": "An associative container from the STL that stores elements in sorted order based on their keys. Elements are stored as key-value pairs."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3762"
+  },
+  "question": "What is **`std::unordered_map`**?",
+  "answer": "An associative container that stores elements in buckets using a **hash function**. It provides very fast (average O(1)) insertion and lookup but does not maintain sorted order."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3763"
+  },
+  "question": "What is **`std::string`**?",
+  "answer": "A class that represents a sequence of characters and manages the memory for the character data automatically."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3764"
+  },
+  "question": "What is the **Rule of Three/Five**?",
+  "answer": "If a class requires a user-defined **destructor**, **copy constructor**, or **copy assignment operator** (Rule of Three), it probably requires all three. The Rule of Five adds the **move constructor** and **move assignment operator**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3765"
+  },
+  "question": "What is **Function Overriding**?",
+  "answer": "Redefining a base class's virtual function in a derived class to provide a specific implementation for that derived class."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3766"
+  },
+  "question": "What is **Function Overloading**?",
+  "answer": "Defining multiple functions in the same scope with the **same name** but different **parameter lists** (different types, order, or number of parameters)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3767"
+  },
+  "question": "What is **`static_assert`**?",
+  "answer": "A C++11 keyword used for **compile-time assertion**. It checks a boolean constant expression and produces a compiler error if the condition is false."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3768"
+  },
+  "question": "What is **`auto`** keyword?",
+  "answer": "A C++11 keyword used for **automatic type deduction**. The compiler infers the type of the variable from its initialization expression."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3769"
+  },
+  "question": "What is **`decltype`**?",
+  "answer": "A C++11 keyword that yields the **declared type** of an expression. It's often used when writing templates where the return type depends on the input parameter types."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf376a"
+  },
+  "question": "What is the use of the **`explicit`** keyword?",
+  "answer": "When placed before a constructor, it prevents the compiler from using that constructor for **implicit type conversion**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf376b"
+  },
+  "question": "What is **Garbage Collection** in standard C++?",
+  "answer": "Standard C++ **does not** have a built-in garbage collector. Programmers must manually manage memory using `new`/`delete` or rely on **RAII** and **Smart Pointers**."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf376c"
+  },
+  "question": "What is the difference between a header file (`.h`) and a source file (`.cpp`)?",
+  "answer": "The **header file** contains **declarations** (function prototypes, class definitions). The **source file** contains the corresponding **definitions** (function implementations, class method bodies)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf376d"
+  },
+  "question": "What are **Inclusion Guards**?",
+  "answer": "Preprocessor directives (#ifndef, #define, #endif) used in header files to prevent the same header file from being included multiple times in a single compilation unit."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf376e"
+  },
+  "question": "What is **`std::array`** (C++11)?",
+  "answer": "A fixed-size, compile-time-fixed array container from the STL that offers performance similar to C-style arrays but with the safety and functionality of containers."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf376f"
+  },
+  "question": "What is **`std::set`**?",
+  "answer": "An associative container that stores **unique** elements in a **sorted order** (based on the key). Lookup is typically O(log n)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3770"
+  },
+  "question": "What is **`std::vector<bool>`**?",
+  "answer": "A specialized version of `std::vector` where the library optimizes space by packing the boolean values into individual bits (unlike other vectors which reserve full bytes)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3771"
+  },
+  "question": "What is **`std::move`**?",
+  "answer": "A function that casts an L-value to an **R-value reference**, signaling to the compiler that the value is about to be 'moved from' and its resources can be 'stolen'."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3772"
+  },
+  "question": "What is **Type Erasure**?",
+  "answer": "A technique used in C++ (often with templates and virtual functions) to hide the specific type of an object to simplify interfaces and make code more generic."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3773"
+  },
+  "question": "What is **V-table** (Virtual Table)?",
+  "answer": "A lookup table primarily used to resolve calls to **virtual functions** at runtime (dynamic dispatch). Every class with virtual functions has a V-table."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3774"
+  },
+  "question": "What is **`std::optional`** (C++17)?",
+  "answer": "A container that holds an **optional** value; it may or may not contain an object. Used as a type-safe way to represent the absence of a value (instead of `nullptr` or a sentinel value)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3775"
+  },
+  "question": "What is **Lambda Expression** (C++11)?",
+  "answer": "A concise way to create an **anonymous function object** inline. Its basic syntax includes a **capture clause** ([]) followed by a parameter list and body."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3776"
+  },
+  "question": "What is the **Capture Clause** in a Lambda?",
+  "answer": "The bracket part ([]) of a lambda expression that specifies which variables from the surrounding scope the lambda can access and whether to access them **by value** ([var]) or **by reference** ([&var])."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3777"
+  },
+  "question": "What is a **Static Cast** from base to derived class?",
+  "answer": "A **downcast** that is performed at **compile-time** without any runtime checks. It is only safe to use when the programmer is **certain** of the object's actual type."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3778"
+  },
+  "question": "What is **`std::mutex`**?",
+  "answer": "A synchronization primitive used in multithreading to protect shared data from simultaneous access by multiple threads (ensuring mutual exclusion)."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf3779"
+  },
+  "question": "What is **`std::thread`**?",
+  "answer": "The class used to manage and execute threads in C++ applications, allowing for parallel execution of code."
+},
+{
+  "_id": {
+    "$oid": "6900b56bd2ef72332dbf377a"
+  },
+  "question": "What is a **Forward Declaration**?",
+  "answer": "A declaration of a class, function, or other entity that occurs before its full definition. Used to tell the compiler that the name exists, typically to resolve dependencies in header files."
+}]
