@@ -1,0 +1,602 @@
+[{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf362d"
+  },
+  "question": "What is Python?",
+  "answer": "A high-level, interpreted, general-purpose programming language known for its readability."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf362e"
+  },
+  "question": "What is the difference between a list and a tuple?",
+  "answer": "Lists are **mutable** (can be changed); tuples are **immutable** (cannot be changed)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf362f"
+  },
+  "question": "How do you check the type of a variable?",
+  "answer": "Using the built-in `type()` function, e.g., `type(my_var)`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3630"
+  },
+  "question": "What is the purpose of the `self` keyword?",
+  "answer": "It's a reference to the **instance** of the class, used as the first argument in instance methods."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3631"
+  },
+  "question": "What is a **lambda function**?",
+  "answer": "A small, anonymous function defined with the `lambda` keyword, limited to a single expression."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3632"
+  },
+  "question": "What is the difference between `/` and `//` operators?",
+  "answer": "` / ` is standard division (returns float); ` // ` is floor division (returns integer part)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3633"
+  },
+  "question": "Is indentation significant in Python?",
+  "answer": "Yes, indentation defines code blocks (like loops, functions, classes), unlike other languages that use braces `{}`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3634"
+  },
+  "question": "What does `*args` and `**kwargs` allow in a function definition?",
+  "answer": "`*args` collects non-keyword arguments into a **tuple**; `**kwargs` collects keyword arguments into a **dictionary**."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3635"
+  },
+  "question": "What is a Python **module**?",
+  "answer": "A file containing Python definitions and statements. It can be imported using the `import` statement."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3636"
+  },
+  "question": "What is the difference between `break` and `continue` in a loop?",
+  "answer": "`break` **terminates** the entire loop; `continue` **skips** the rest of the current iteration."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3637"
+  },
+  "question": "How do you create a dictionary in Python?",
+  "answer": "Using curly braces with key-value pairs, e.g., `{'key': 'value'}`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3638"
+  },
+  "question": "What is the output of `print(5 * 'a')`?",
+  "answer": "`aaaaa` (String **multiplication** or repetition)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3639"
+  },
+  "question": "What is a **docstring**?",
+  "answer": "A string literal that occurs as the first statement in a module, function, class, or method definition, used for documentation."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf363a"
+  },
+  "question": "What are **mutable** data types?",
+  "answer": "Data types whose value can be **changed** after they are created (e.g., list, dictionary, set)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf363b"
+  },
+  "question": "What are **immutable** data types?",
+  "answer": "Data types whose value **cannot** be changed after creation (e.g., string, tuple, integer, float)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf363c"
+  },
+  "question": "What is the difference between the `append()` and `extend()` list methods?",
+  "answer": "`append()` adds a **single element** to the end; `extend()` adds **all elements** from an iterable to the end."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf363d"
+  },
+  "question": "What keyword is used to define a function?",
+  "answer": "The **`def`** keyword."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf363e"
+  },
+  "question": "What is the result of `2 ** 3`?",
+  "answer": "8 (Exponentiation: 2 raised to the power of 3)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf363f"
+  },
+  "question": "What is the purpose of the `pass` statement?",
+  "answer": "It's a null operation; it does nothing but acts as a **placeholder** where syntax requires a statement."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3640"
+  },
+  "question": "How do you create an empty list?",
+  "answer": "Using square brackets: `my_list = []` or `my_list = list()`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3641"
+  },
+  "question": "What is **slicing** in Python?",
+  "answer": "A method to extract a sequence of elements from a sequence object (like a list or string) using the syntax `[start:stop:step]`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3642"
+  },
+  "question": "How do you convert a string to an integer?",
+  "answer": "Using the `int()` constructor: `int('123')`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3643"
+  },
+  "question": "What is **scope** in Python?",
+  "answer": "The region of the code where a variable is accessible. Follows the **LEGB rule** (Local, Enclosing, Global, Built-in)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3644"
+  },
+  "question": "What is a **Set** in Python?",
+  "answer": "An unordered collection of **unique** elements."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3645"
+  },
+  "question": "What is **f-string** formatting?",
+  "answer": "A concise way to embed expressions inside string literals using an `f` prefix, like `f'Value is {x}'`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3646"
+  },
+  "question": "How do you write a single-line comment?",
+  "answer": "Using the hash symbol: `# This is a comment`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3647"
+  },
+  "question": "What is **object-oriented programming (OOP)**?",
+  "answer": "A programming paradigm based on the concept of 'objects', which can contain data (attributes) and code (methods)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3648"
+  },
+  "question": "What is **inheritance**?",
+  "answer": "A mechanism where a new class (child/subclass) derives properties and behavior from an existing class (parent/superclass)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3649"
+  },
+  "question": "What is **polymorphism**?",
+  "answer": "The ability of an object or method to take on many forms, often through method overriding or using the same interface for different types."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf364a"
+  },
+  "question": "What is the difference between `range(5)` and `range(0, 5)`?",
+  "answer": "They produce the same sequence of numbers (0, 1, 2, 3, 4). `range(5)` defaults the start to 0."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf364b"
+  },
+  "question": "How do you read a line from user input?",
+  "answer": "Using the `input()` function: `name = input('Enter name: ')`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf364c"
+  },
+  "question": "What is the output of `len([1, 2, 3])`?",
+  "answer": "3 (The **length** of the list)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf364d"
+  },
+  "question": "How do you import the entire `math` module?",
+  "answer": "`import math`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf364e"
+  },
+  "question": "How do you import a specific function from a module?",
+  "answer": "Using `from module_name import function_name`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf364f"
+  },
+  "question": "What is **indentation** used for?",
+  "answer": "To denote the **block structure** of code (e.g., inside `if`, `for`, `def`)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3650"
+  },
+  "question": "What is the output of `3 == 3`?",
+  "answer": "**True** (A boolean value)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3651"
+  },
+  "question": "What is the primary difference between a dictionary key and value?",
+  "answer": "Keys must be **unique and immutable**; values can be anything and can be duplicated."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3652"
+  },
+  "question": "How do you create a class named `Car`?",
+  "answer": "Using the `class` keyword: `class Car:`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3653"
+  },
+  "question": "What is **exception handling**?",
+  "answer": "The process of anticipating and responding to runtime errors using `try`/`except` blocks."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3654"
+  },
+  "question": "What is the `global` keyword used for?",
+  "answer": "To modify a variable defined **outside** the current function's scope."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3655"
+  },
+  "question": "How do you check if a key exists in a dictionary?",
+  "answer": "Using the `in` keyword: `'key_name' in my_dict`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3656"
+  },
+  "question": "What happens if you try to access an index that doesn't exist in a list?",
+  "answer": "An **`IndexError`** is raised."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3657"
+  },
+  "question": "What is the result of `'hello'.upper()`?",
+  "answer": "`'HELLO'` (The string converted to uppercase)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3658"
+  },
+  "question": "What is the function of the `list()` constructor?",
+  "answer": "It creates a new **list** object, often used to convert other iterables."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3659"
+  },
+  "question": "What is **list comprehension**?",
+  "answer": "A concise way to create lists based on existing iterables in a single line."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf365a"
+  },
+  "question": "What is the role of `finally` in exception handling?",
+  "answer": "The code in the `finally` block **always executes**, regardless of whether an exception occurred or not."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf365b"
+  },
+  "question": "Can a string be reassigned to a different value?",
+  "answer": "Yes, but the string itself is **immutable**. Reassignment creates a *new* string object."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf365c"
+  },
+  "question": "What are **negative indexes** used for in sequences?",
+  "answer": "To access elements from the **end** of the sequence (e.g., `-1` is the last element)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf365d"
+  },
+  "question": "How do you delete an element from a dictionary by its key?",
+  "answer": "Using the `del` keyword: `del my_dict['key_name']`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf365e"
+  },
+  "question": "What is **encapsulation** in OOP?",
+  "answer": "Bundling data (attributes) and the methods that operate on that data into a single unit (the class)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf365f"
+  },
+  "question": "What does the `yield` keyword do?",
+  "answer": "It **pauses** a generator function, returns a value, and saves its state for the next call."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3660"
+  },
+  "question": "What is **recursion**?",
+  "answer": "A programming technique where a function **calls itself** to solve smaller instances of the same problem."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3661"
+  },
+  "question": "What is the difference between a **module** and a **package**?",
+  "answer": "A **module** is a single Python file (`.py`). A **package** is a collection of modules organized in directories (containing an `__init__.py` file)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3662"
+  },
+  "question": "What is the purpose of the `if __name__ == '__main__':` block?",
+  "answer": "It ensures that the enclosed code runs **only when the script is executed directly**, not when it's imported as a module."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3663"
+  },
+  "question": "How do you find the length of a string?",
+  "answer": "Using the `len()` function: `len('string')`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3664"
+  },
+  "question": "What is a **list comprehension** for reversing a list?",
+  "answer": "`reversed_list = original_list[::-1]` (using slicing)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3665"
+  },
+  "question": "What is **pass by object reference** in Python?",
+  "answer": "When an object is passed to a function, the function receives a reference to that object. Modifying a mutable object inside affects the original."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3666"
+  },
+  "question": "What is the result of `'10' + '5'`?",
+  "answer": "`'105'` (String **concatenation**)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3667"
+  },
+  "question": "What does PEP 8 refer to?",
+  "answer": "The official **style guide** for Python code, focusing on readability and consistency."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3668"
+  },
+  "question": "How do you open a file for **writing**?",
+  "answer": "Using `open('filename.txt', 'w')`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3669"
+  },
+  "question": "What is the purpose of the `with` statement for files?",
+  "answer": "It automatically handles **closing the file**, even if errors occur."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf366a"
+  },
+  "question": "What are **decorators**?",
+  "answer": "Functions that take another function as an argument, add some functionality, and return the modified function, often denoted by `@`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf366b"
+  },
+  "question": "What is **Type Hinting**?",
+  "answer": "Optional annotations used to specify the expected data types for variables, function arguments, and return values (e.g., `def func(x: int) -> str:`)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf366c"
+  },
+  "question": "What is **shallow copy** vs **deep copy**?",
+  "answer": "Shallow copy creates a new container but populates it with **references** to the original's nested objects. Deep copy creates a completely **independent** new object recursively."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf366d"
+  },
+  "question": "How do you convert a list to a set?",
+  "answer": "Using the `set()` constructor: `my_set = set(my_list)`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf366e"
+  },
+  "question": "What is the use of the `dir()` function?",
+  "answer": "It returns a list of **valid attributes** and methods for an object."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf366f"
+  },
+  "question": "Is Python dynamically or statically typed?",
+  "answer": "**Dynamically typed** (type checking happens at runtime)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3670"
+  },
+  "question": "How do you create an **empty dictionary**?",
+  "answer": "Using curly braces: `my_dict = {}` or `my_dict = dict()`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3671"
+  },
+  "question": "What is the output of `int(5.9)`?",
+  "answer": "5 (Truncation towards zero)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3672"
+  },
+  "question": "What is **method overriding**?",
+  "answer": "When a subclass provides a specific implementation for a method that is already defined in its superclass."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3673"
+  },
+  "question": "What is **Pickling**?",
+  "answer": "The process of converting a Python object hierarchy into a **byte stream** (serialization)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3674"
+  },
+  "question": "What is the **`super()`** function used for?",
+  "answer": "To call methods from a **parent or sibling class** in an inheritance hierarchy."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3675"
+  },
+  "question": "How do you create an **empty set**?",
+  "answer": "Using `my_set = set()` (Using `{}` creates an empty dictionary)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3676"
+  },
+  "question": "What function generates random integers?",
+  "answer": "The `randint(a, b)` function from the **`random`** module."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3677"
+  },
+  "question": "What is **list concatenation**?",
+  "answer": "Joining two lists using the `+` operator, e.g., `list1 + list2`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3678"
+  },
+  "question": "What error occurs when you try to divide by zero?",
+  "answer": "**`ZeroDivisionError`**."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3679"
+  },
+  "question": "What is the result of `10 % 3`?",
+  "answer": "1 (The **remainder** of the division)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf367a"
+  },
+  "question": "What are **namespaces** in Python?",
+  "answer": "A system that ensures all names in a program are unique and can be used without conflict."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf367b"
+  },
+  "question": "Can Python support **multiple inheritance**?",
+  "answer": "Yes, a class can inherit from multiple parent classes."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf367c"
+  },
+  "question": "What is **`__name__`**?",
+  "answer": "A built-in variable that holds the name of the current module. It is `'__main__'` when the script is run directly."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf367d"
+  },
+  "question": "How do you create an empty class?",
+  "answer": "Using the `class` keyword followed by a colon and the `pass` statement: `class Empty: pass`."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf367e"
+  },
+  "question": "What is the output of `bool(0)`?",
+  "answer": "**False** (0 is considered falsy)."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf367f"
+  },
+  "question": "What is **abstraction** in OOP?",
+  "answer": "Hiding the complex implementation details and showing only the necessary features of the object."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3680"
+  },
+  "question": "What is **dictionary comprehension**?",
+  "answer": "A compact way to create dictionaries using a single line, similar to list comprehension."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3681"
+  },
+  "question": "What is **IDLE**?",
+  "answer": "The Integrated Development and Learning Environment that comes bundled with Python."
+},
+{
+  "_id": {
+    "$oid": "6900add8d2ef72332dbf3682"
+  },
+  "question": "What is the function of the `break` statement within a `for` loop?",
+  "answer": "It immediately **exits** the loop it is contained within."
+}]
