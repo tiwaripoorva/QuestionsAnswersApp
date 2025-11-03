@@ -1,0 +1,584 @@
+[{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36db"
+  },
+  "question": "What is the .NET Framework / .NET Core?",
+  "answer": "A developer platform by Microsoft for building various applications (web, mobile, desktop). It consists of the CLR and a set of class libraries."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36dc"
+  },
+  "question": "What is the **CLR** (Common Language Runtime)?",
+  "answer": "The execution environment for .NET programs. It manages memory, garbage collection, thread execution, security, and exception handling."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36dd"
+  },
+  "question": "What is **C#**?",
+  "answer": "A modern, object-oriented, strongly-typed programming language developed by Microsoft for the .NET platform."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36de"
+  },
+  "question": "Differentiate between **Value Types** and **Reference Types**.",
+  "answer": "Value types (e.g., `int`, `struct`) store data directly on the **Stack**. Reference types (e.g., `class`, `string`) store a reference to the data on the **Heap**."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36df"
+  },
+  "question": "What is **Garbage Collection (GC)**?",
+  "answer": "An automatic memory management process in the CLR that identifies objects no longer in use and frees the memory they occupy."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e0"
+  },
+  "question": "What is **JIT** (Just-In-Time) compilation?",
+  "answer": "A process where the **CIL** (Common Intermediate Language) code is converted into **native machine code** at runtime by the CLR, enabling cross-platform execution."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e1"
+  },
+  "question": "What is an **Assembly**?",
+  "answer": "A compiled file (`.dll` or `.exe`) that is the fundamental unit of deployment, versioning, reuse, security, and manifest information in .NET."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e2"
+  },
+  "question": "What is the difference between a **Class** and a **Struct**?",
+  "answer": "A **Class** is a reference type (heap allocation), supports inheritance, and can have a destructor. A **Struct** is a value type (stack allocation) and does not support inheritance."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e3"
+  },
+  "question": "What are the four pillars of **OOP** (Object-Oriented Programming)?",
+  "answer": "**Encapsulation**, **Inheritance**, **Polymorphism**, and **Abstraction**."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e4"
+  },
+  "question": "What is **Encapsulation**?",
+  "answer": "The mechanism of wrapping data (fields) and code (methods) that operate on the data into a single unit (a class) and restricting direct access to the data."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e5"
+  },
+  "question": "What is **Polymorphism**?",
+  "answer": "The ability of an object to take on many forms. In C#, this is mainly achieved through **method overloading** (compile-time) and **method overriding** (runtime)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e6"
+  },
+  "question": "What is the difference between `const` and `readonly`?",
+  "answer": "**`const`** is a **compile-time** constant, must be initialized at declaration, and is implicitly static. **`readonly`** is a **runtime** constant, can be initialized at declaration or in the constructor, and is used for instance fields."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e7"
+  },
+  "question": "What is **Boxing** and **Unboxing**?",
+  "answer": "**Boxing** is the implicit conversion of a value type to the type `object` (or an interface type). **Unboxing** is the explicit conversion of `object` (or an interface type) back to a value type."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e8"
+  },
+  "question": "What is a **Delegate**?",
+  "answer": "A type-safe **function pointer**; it holds a reference to a method with a specific signature (return type and parameters) and can be used to invoke that method."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36e9"
+  },
+  "question": "What is the purpose of the **`using` statement**?",
+  "answer": "It ensures that the `Dispose()` method is called on objects that implement the **`IDisposable`** interface, typically for releasing unmanaged resources like file handles or database connections."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36ea"
+  },
+  "question": "Can C# support **multiple inheritance**?",
+  "answer": "No, C# does not support multiple inheritance of classes, but it can achieve multiple inheritance of interface definitions."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36eb"
+  },
+  "question": "What is an **Interface**?",
+  "answer": "A contract that defines a set of methods, properties, and events that a class must implement. It contains only declarations, not implementation details."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36ec"
+  },
+  "question": "What is the difference between an **Abstract Class** and an **Interface**?",
+  "answer": "An Abstract Class can have both implemented and unimplemented methods, can have fields and constructors, and a class can inherit only one. An Interface can only contain method signatures (in C# before version 8), cannot have fields, and a class can implement multiple."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36ed"
+  },
+  "question": "What are the common **Access Modifiers**?",
+  "answer": "**`public`**, **`private`**, **`protected`**, **`internal`**, and **`protected internal`**."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36ee"
+  },
+  "question": "What is a **Namespace**?",
+  "answer": "A way to organize and provide a level of separation for code, preventing naming conflicts by grouping related classes, structs, interfaces, and enums."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36ef"
+  },
+  "question": "What are **Properties** in C#?",
+  "answer": "Members that provide a flexible mechanism to read, write, or compute the value of a private field, typically using accessor methods like **`get`** and **`set`**."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f0"
+  },
+  "question": "What is **Method Overloading**?",
+  "answer": "Defining multiple methods in the same class with the **same name** but different **parameter lists** (different number, type, or order of parameters)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f1"
+  },
+  "question": "What is **Method Overriding**?",
+  "answer": "Providing a specific implementation in a subclass for a method that is already defined in its superclass, using the **`virtual`** and **`override`** keywords."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f2"
+  },
+  "question": "What is the purpose of the **`sealed`** keyword?",
+  "answer": "When applied to a class, it prevents other classes from inheriting from it. When applied to a method, it prevents a derived class from overriding it."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f3"
+  },
+  "question": "What is **LINQ** (Language Integrated Query)?",
+  "answer": "A set of features that adds native data querying capabilities to the C# language, allowing data retrieval from various sources (arrays, collections, databases) using a unified syntax."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f4"
+  },
+  "question": "What are **Generics**?",
+  "answer": "A feature that allows you to define classes, interfaces, and methods with **placeholder types** (type parameters), providing **type-safe** code without losing performance or code reusability."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f5"
+  },
+  "question": "Differentiate between **`String`** and **`StringBuilder`**.",
+  "answer": "The `String` class is **immutable** (creates a new string object on every change). `StringBuilder` is **mutable** and provides better performance for extensive string manipulation operations."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f6"
+  },
+  "question": "What is the role of the **`async`** and **`await`** keywords?",
+  "answer": "They simplify **asynchronous programming**. `async` marks a method as asynchronous, and `await` pauses the execution until the awaited asynchronous operation completes without blocking the calling thread."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f7"
+  },
+  "question": "What are the roles of **`try`**, **`catch`**, and **`finally`**?",
+  "answer": "**`try`** contains the code that might throw an exception. **`catch`** handles a specific exception type. **`finally`** contains code that **always executes**, regardless of whether an exception occurred or not."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f8"
+  },
+  "question": "What is **Delegates Multicasting**?",
+  "answer": "The ability of a single delegate instance to reference and invoke multiple methods sequentially. Delegates that do this are derived from `System.MulticastDelegate`."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36f9"
+  },
+  "question": "What is **`ref`** and **`out`**?",
+  "answer": "Both pass arguments **by reference**. **`ref`** requires the variable to be initialized **before** the method call. **`out`** requires the method to assign a value to the parameter **before** returning."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36fa"
+  },
+  "question": "What is the **`static`** keyword used for?",
+  "answer": "It makes a member or class belong to the **type itself** rather than to a specific instance of the type. Static members are shared across all instances."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36fb"
+  },
+  "question": "What is **Dependency Injection (DI)**?",
+  "answer": "A design pattern where a class's dependencies are provided to it from the outside rather than being created internally. It promotes **loose coupling** and testability."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36fc"
+  },
+  "question": "What is **NuGet**?",
+  "answer": "The package manager for .NET, allowing developers to easily create, share, and consume useful code libraries (packages)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36fd"
+  },
+  "question": "What are **Action Filters** in ASP.NET MVC/Core?",
+  "answer": "Attributes that can be applied to controller actions or controllers to inject logic before or after the action method execution (e.g., authentication, logging, validation)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36fe"
+  },
+  "question": "What is **Middleware** in ASP.NET Core?",
+  "answer": "Software components assembled into a pipeline to handle HTTP requests and responses (e.g., routing, authentication, session). Each component can choose to pass the request to the next one or short-circuit it."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf36ff"
+  },
+  "question": "What are **`IEnumerable`** and **`IQueryable`**?",
+  "answer": "Both are interfaces for collections. **`IEnumerable`** processes query logic **in memory**. **`IQueryable`** allows query logic to be executed **by the data source** (e.g., SQL server), supporting deferred execution and better filtering efficiency."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3700"
+  },
+  "question": "What is **Deserialization**?",
+  "answer": "The process of converting a stream of bytes (like JSON, XML, or binary data) back into a working .NET object."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3701"
+  },
+  "question": "How is **Inheritance** represented in C#?",
+  "answer": "Using the colon (`:`) symbol after the class name, e.g., `class Child : Parent`."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3702"
+  },
+  "question": "What are **Null-Coalescing Operators**?",
+  "answer": "The `??` operator returns the left-hand operand if it's not null; otherwise, it returns the right-hand operand. The `??=` operator assigns the right-hand operand to the left-hand operand only if the left-hand operand is null."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3703"
+  },
+  "question": "What is the **`is`** operator?",
+  "answer": "It checks if an object is compatible with a given type or matches a pattern."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3704"
+  },
+  "question": "What is the **`as`** operator?",
+  "answer": "It performs an explicit type conversion between compatible reference types and returns `null` on failure, instead of throwing an exception."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3705"
+  },
+  "question": "What is **Reflection**?",
+  "answer": "The ability of code to examine and manipulate its own metadata (types, methods, properties) at runtime."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3706"
+  },
+  "question": "What is the default access modifier for class members (fields/methods)?",
+  "answer": "**`private`**."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3707"
+  },
+  "question": "What is the **`this`** keyword used for?",
+  "answer": "It refers to the **current instance** of the class, often used to access members hidden by local variables or to pass the current object as a parameter."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3708"
+  },
+  "question": "What is a **Constructor**?",
+  "answer": "A special method used for initializing the properties or fields of an object when it is created."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3709"
+  },
+  "question": "What is a **Destructor** (or Finalizer)?",
+  "answer": "A method used to clean up unmanaged resources held by an object before it is garbage collected. It starts with a tilde (`~`)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf370a"
+  },
+  "question": "What is the difference between an `Array` and a `List<T>`?",
+  "answer": "`Array` has a **fixed size** and is less flexible. `List<T>` (from `System.Collections.Generic`) is a **dynamic array** whose size can grow or shrink."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf370b"
+  },
+  "question": "What is **`async void`** typically reserved for?",
+  "answer": "Event handlers. It should be avoided in general methods because it makes exception handling difficult and the caller cannot `await` the result."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf370c"
+  },
+  "question": "What is a **Jagged Array**?",
+  "answer": "An array whose elements are arrays, where the member arrays can be of different dimensions and sizes."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf370d"
+  },
+  "question": "What is **Serialization**?",
+  "answer": "The process of converting a .NET object into a stream of bytes or a format (like JSON or XML) for storage or transmission."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf370e"
+  },
+  "question": "What is the role of **CTS** (Common Type System)?",
+  "answer": "It defines how data types are declared, used, and managed in the CLR, ensuring language interoperability across all .NET languages."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf370f"
+  },
+  "question": "What is the role of **CLS** (Common Language Specification)?",
+  "answer": "A set of rules that defines the features that all .NET languages must support to ensure cross-language compatibility."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3710"
+  },
+  "question": "What is **Managed Code**?",
+  "answer": "Code that runs directly under the supervision of the CLR, which manages services like garbage collection and security."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3711"
+  },
+  "question": "What is **Unmanaged Code**?",
+  "answer": "Code that does not run under the CLR (e.g., C/C++ code) and whose memory and resource management must be handled manually."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3712"
+  },
+  "question": "What is **`yield return`** used for?",
+  "answer": "It returns one element at a time from an **iterator** or **generator**, delaying execution until the next element is requested, improving memory efficiency."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3713"
+  },
+  "question": "What is a **`Dictionary<TKey, TValue>`**?",
+  "answer": "A collection that stores a set of key-value pairs. Keys must be unique, and lookup/insertion is typically $O(1)$ (constant time)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3714"
+  },
+  "question": "What is **Autofac** / **Ninject** / **Unity**?",
+  "answer": "Popular **Dependency Injection (DI) containers** used in .NET to manage the instantiation and lifetime of services and dependencies."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3715"
+  },
+  "question": "What is the **`var`** keyword?",
+  "answer": "It is used for **implicitly typed local variables**, where the compiler infers the type from the initialization expression. It's still strongly typed, just inferred."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3716"
+  },
+  "question": "What is a **`Tuple`** in C#?",
+  "answer": "A simple data structure that can contain multiple data elements of different types, used to easily return multiple values from a method."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3717"
+  },
+  "question": "What is **Short-Circuit Evaluation**?",
+  "answer": "When using logical operators (`&&` or `||`), the second operand is executed or evaluated only if necessary (e.g., if the first part of `&&` is `false`, the second is skipped)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3718"
+  },
+  "question": "What is the **`nameof`** operator?",
+  "answer": "It gets the string name of a variable, type, or member. It's useful for logging, throwing exceptions, and binding, providing compile-time type safety."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3719"
+  },
+  "question": "What is **Nullable Type**?",
+  "answer": "A value type that can also be assigned the value `null`. It is declared using a question mark, e.g., `int? nullableInt`."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf371a"
+  },
+  "question": "What is the **`base`** keyword used for?",
+  "answer": "It is used within a derived class to access members (like constructors, methods, or fields) of the immediate parent class."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf371b"
+  },
+  "question": "What is the primary function of **ASP.NET Core**?",
+  "answer": "To build modern, cloud-based, internet-connected applications (web apps, APIs) that can run cross-platform (Windows, Linux, macOS)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf371c"
+  },
+  "question": "What is the **Model-View-Controller (MVC)** pattern?",
+  "answer": "An architectural pattern that separates the application into three interconnected parts: **Model** (data/business logic), **View** (UI), and **Controller** (input/flow handling)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf371d"
+  },
+  "question": "What is a **`try-catch-when`** block?",
+  "answer": "A feature that allows adding a conditional check (`when` clause) to a `catch` block, so the block only executes if the condition is met."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf371e"
+  },
+  "question": "What is **Entity Framework (EF) Core**?",
+  "answer": "A cross-platform, open-source **Object-Relational Mapper (ORM)** for .NET, which enables developers to work with databases using .NET objects."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf371f"
+  },
+  "question": "What is **Code First** in EF Core?",
+  "answer": "A development workflow where the database is generated based on the C# classes (models) defined in the application."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3720"
+  },
+  "question": "What is a **Record** type (C# 9+)?",
+  "answer": "A reference type primarily used for creating **immutable** data models that provide value-based equality by default."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3721"
+  },
+  "question": "What is a **Partial Class**?",
+  "answer": "A feature that allows splitting the definition of a single class, struct, or interface across multiple physical C# source files. The compiler combines them into a single type."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3722"
+  },
+  "question": "What is **Unmanaged Resource** cleanup?",
+  "answer": "The manual process of releasing resources not managed by the CLR (like file handles, database connections), typically done by implementing **`IDisposable`**."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3723"
+  },
+  "question": "What is **`await Task.Run(...)`** used for?",
+  "answer": "It is a common pattern to execute CPU-bound work on a thread pool thread, freeing up the calling thread (often the main UI or request thread) to continue processing."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3724"
+  },
+  "question": "What is **`IHostedService`** in .NET Core?",
+  "answer": "An interface used to implement background tasks, services, or workers that run for the lifetime of the application host."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3725"
+  },
+  "question": "What is **SOLID**?",
+  "answer": "An acronym for five design principles intended to make software designs more understandable, flexible, and maintainable: Single responsibility, Open/closed, Liskov substitution, Interface segregation, and Dependency inversion."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3726"
+  },
+  "question": "What is **ASP.NET Web API**?",
+  "answer": "A framework for building HTTP services that can reach a broad range of clients, including browsers and mobile devices (often used to build RESTful APIs)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3727"
+  },
+  "question": "What are **Extension Methods**?",
+  "answer": "Static methods that can be called as if they were instance methods on a type. They must be defined in a static class and use the `this` keyword on the first parameter."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3728"
+  },
+  "question": "What is the significance of the **Global Assembly Cache (GAC)**?",
+  "answer": "A shared repository where strongly-named .NET assemblies are stored. Assemblies here can be used by multiple applications, and versioning conflicts are avoided."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf3729"
+  },
+  "question": "What is **Exception Filtering** (C# 6+)?",
+  "answer": "The use of the `when` keyword in a `catch` block to specify an expression that must be true for the `catch` block to execute."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf372a"
+  },
+  "question": "What is **Code Access Security (CAS)**?",
+  "answer": "A security mechanism (primarily in older .NET Framework) that restricted the resources and operations that code could access based on evidence about the code's origin."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf372b"
+  },
+  "question": "What is the **`default`** keyword (in expressions)?",
+  "answer": "It returns the default value for any type, which is `null` for reference types and zero/falsy for value types (e.g., `default(int)` is 0)."
+},
+{
+  "_id": {
+    "$oid": "6900ae82d2ef72332dbf372c"
+  },
+  "question": "What is **Unit Testing**?",
+  "answer": "A software testing method where individual units or components of a software are tested in isolation to determine if they are fit for use."
+},
+{
+  "_id": {
+    "$oid": "6901815536b38dc279484952"
+  },
+  "question": "What is readonly keyword",
+  "answer": "The readonly keyword in C# is used to specify that a field's value can only be assigned or changed in two places:\n\n1. During its declaration.\n\n2. Within the constructor of the class where it is declared.",
+  "createdAt": {
+    "$date": "2025-10-29T02:52:05.028Z"
+  }
+}]
