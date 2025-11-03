@@ -1,0 +1,644 @@
+[{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35cd"
+  },
+  "question": "What is Java?",
+  "answer": "Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible, aiming for 'Write Once, Run Anywhere' (WORA)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ce"
+  },
+  "question": "What are the four main principles of OOPs?",
+  "answer": "The four main principles are **Encapsulation**, **Inheritance**, **Polymorphism**, and **Abstraction**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35cf"
+  },
+  "question": "What is a Class in Java?",
+  "answer": "A class is a **blueprint** or **template** for creating objects. It defines the state (fields/variables) and behavior (methods) that its objects will have."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d0"
+  },
+  "question": "What is an Object in Java?",
+  "answer": "An object is an **instance of a class**. It is a real-world entity that has a state and behavior, and occupies memory."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d1"
+  },
+  "question": "What is Encapsulation?",
+  "answer": "Encapsulation is the mechanism of **bundling the data (variables) and the methods that operate on the data into a single unit (class)**. It also involves **data hiding** by making the variables private."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d2"
+  },
+  "question": "What is Inheritance?",
+  "answer": "Inheritance is the mechanism where one class (**subclass/child class**) acquires the properties and behaviors of another class (**superclass/parent class**). It promotes code reusability."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d3"
+  },
+  "question": "What is Polymorphism?",
+  "answer": "Polymorphism means 'many forms'. In Java, it allows an object to take on many forms, typically achieved through **Method Overloading (compile-time)** and **Method Overriding (runtime)**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d4"
+  },
+  "question": "What is Abstraction?",
+  "answer": "Abstraction is the process of **hiding the complex implementation details** and showing only the essential features of the object or system to the user."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d5"
+  },
+  "question": "What is the difference between Method Overloading and Method Overriding?",
+  "answer": "Method Overloading is having multiple methods with the **same name but different parameters** (Compile-time Polymorphism). Method Overriding is when a subclass provides a specific implementation for a method that is already defined in its superclass (Runtime Polymorphism)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d6"
+  },
+  "question": "What is a Constructor in Java?",
+  "answer": "A constructor is a special method used to **initialize an object**. It has the same name as the class and has no return type."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d7"
+  },
+  "question": "What is the default constructor?",
+  "answer": "A constructor provided by the compiler if the programmer does not explicitly define any constructor. It takes **no arguments** and initializes instance variables to their default values."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d8"
+  },
+  "question": "What is a Parameterized Constructor?",
+  "answer": "A constructor that accepts **one or more arguments** to initialize the object's instance variables with specific values."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35d9"
+  },
+  "question": "What is the 'this' keyword?",
+  "answer": "The 'this' keyword refers to the **current object instance**. It can be used to access instance variables, call other constructors (`this()`), or pass the current object as an argument."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35da"
+  },
+  "question": "What is the 'super' keyword?",
+  "answer": "The 'super' keyword refers to the **immediate parent class object**. It is used to call the parent's constructor (`super()`), methods, or fields."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35db"
+  },
+  "question": "Can a class extend multiple classes in Java? Why or why not?",
+  "answer": "No, Java does not support **multiple inheritance of classes** to avoid the **Diamond Problem** (ambiguity when inheriting methods with the same signature from two parents)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35dc"
+  },
+  "question": "How does Java achieve multiple inheritance?",
+  "answer": "Java achieves the functionality of multiple inheritance through **Interfaces**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35dd"
+  },
+  "question": "What is an Interface?",
+  "answer": "An interface is a **reference type** that can contain only method signatures (and constants, and since Java 8, default and static methods). It defines a contract that implementing classes must adhere to."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35de"
+  },
+  "question": "What is the difference between an Abstract Class and an Interface?",
+  "answer": "An **Abstract Class** can have concrete (implemented) methods, instance variables, and constructors. An **Interface** (pre-Java 8) only had abstract methods and constants; it cannot have instance variables."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35df"
+  },
+  "question": "What is an Abstract Class?",
+  "answer": "A class declared with the `abstract` keyword. It **cannot be instantiated** directly and may contain zero or more abstract methods, which must be implemented by its subclasses."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e0"
+  },
+  "question": "Can an abstract class have a constructor?",
+  "answer": "Yes, an abstract class can have a constructor, but it can only be called by the constructor of a subclass using `super()`."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e1"
+  },
+  "question": "What is a static method?",
+  "answer": "A method that belongs to the **class itself** rather than to any specific object of the class. It can be called without creating an object."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e2"
+  },
+  "question": "What is a static variable?",
+  "answer": "A variable that is shared among **all instances** (objects) of a class. There is only one copy of the static variable, regardless of how many objects are created."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e3"
+  },
+  "question": "What is the scope of a local variable?",
+  "answer": "A local variable is declared **inside a method, constructor, or block** and is only accessible within that scope."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e4"
+  },
+  "question": "What is the scope of an instance variable?",
+  "answer": "An instance variable is declared **inside a class but outside any method/constructor/block**. It belongs to the **object** and is unique to each instance."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e5"
+  },
+  "question": "What is the purpose of the `final` keyword?",
+  "answer": "The `final` keyword is used to restrict modification. It can make a variable **constant**, a method **non-overridable**, or a class **non-inheritable**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e6"
+  },
+  "question": "What happens if you try to create an object of an abstract class?",
+  "answer": "You will get a **Compile-Time Error** (e.g., `Cannot instantiate the type ClassName`)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e7"
+  },
+  "question": "What is method binding?",
+  "answer": "The process of linking a method call to the actual method definition. **Early Binding (Static Binding)** happens at compile time (e.g., static, final, private methods). **Late Binding (Dynamic Binding)** happens at runtime (e.g., overridden methods)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e8"
+  },
+  "question": "What is a Package in Java?",
+  "answer": "A package is a mechanism for **grouping related classes and interfaces**. It provides namespace management and access control."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35e9"
+  },
+  "question": "What are the two types of packages in Java?",
+  "answer": "Built-in packages (like `java.lang`, `java.util`) and **User-defined packages**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ea"
+  },
+  "question": "What is an Array in Java?",
+  "answer": "An Array is a **fixed-size, contiguous memory block** that holds a collection of elements of the **same data type**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35eb"
+  },
+  "question": "What is Type Casting?",
+  "answer": "Type casting is the process of converting a value from one data type to another. There is **Widening (Automatic)** and **Narrowing (Explicit)** casting."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ec"
+  },
+  "question": "Explain Widening Type Casting.",
+  "answer": "It's the automatic conversion from a **smaller data type to a larger data type** (e.g., `int` to `long`). This is safe and does not cause data loss."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ed"
+  },
+  "question": "Explain Narrowing Type Casting.",
+  "answer": "It's the explicit conversion from a **larger data type to a smaller data type** (e.g., `long` to `int`). This requires an explicit cast operator and can lead to **data loss**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ee"
+  },
+  "question": "What is the purpose of the `main` method signature: `public static void main(String args[])`?",
+  "answer": "`public`: Accessible from anywhere. `static`: Invoked by the JVM without object creation. `void`: Does not return a value. `main`: Standard entry point name. `String args[]`: Command-line arguments."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ef"
+  },
+  "question": "What are Primitive Data Types in Java?",
+  "answer": "Data types that are not objects. There are **eight** of them: `byte`, `short`, `int`, `long`, `float`, `double`, `char`, and `boolean`."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f0"
+  },
+  "question": "What is the difference between `==` and the `.equals()` method?",
+  "answer": "`==` compares **references** (memory addresses) for objects, or **values** for primitives. `.equals()` compares the **content/state** of two objects, and should be overridden for custom classes."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f1"
+  },
+  "question": "What is method chaining?",
+  "answer": "Calling multiple methods sequentially on the same object instance, where each method returns the object reference (usually `this` or `super`)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f2"
+  },
+  "question": "What is an access modifier?",
+  "answer": "Keywords used to specify the **accessibility or visibility** of a class, method, variable, or constructor. The four levels are `public`, `protected`, default (no keyword), and `private`."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f3"
+  },
+  "question": "What is the visibility of a `private` member?",
+  "answer": "Accessible **only within the class** where it is declared."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f4"
+  },
+  "question": "What is the visibility of a `protected` member?",
+  "answer": "Accessible within its **own package** AND by **subclasses** in any package."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f5"
+  },
+  "question": "What is the visibility of a default (package-private) member?",
+  "answer": "Accessible only **within the same package**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f6"
+  },
+  "question": "What is the visibility of a `public` member?",
+  "answer": "Accessible **from anywhere**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f7"
+  },
+  "question": "What is the Singleton Pattern?",
+  "answer": "A design pattern that ensures a class has **only one instance** and provides a global point of access to that instance. This is usually achieved by making the constructor private."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f8"
+  },
+  "question": "What is the purpose of the `hashCode()` method?",
+  "answer": "It returns an integer value that represents the hash code of an object. It's crucial for objects used as keys in **HashMap** or elements in a **HashSet**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35f9"
+  },
+  "question": "What is the contract between `equals()` and `hashCode()`?",
+  "answer": "If two objects are **equal** according to the `equals(Object)` method, then calling the `hashCode()` method on each of the two objects must produce the **same integer result**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35fa"
+  },
+  "question": "What is the difference between `==` and `instanceof`?",
+  "answer": "`==` compares values/references. `instanceof` is an operator that tests if an object is an instance of a particular class or implements a particular interface."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35fb"
+  },
+  "question": "What are Wrapper Classes?",
+  "answer": "Classes that wrap a primitive type value (e.g., `Integer` for `int`, `Double` for `double`). They allow primitives to be treated as **objects**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35fc"
+  },
+  "question": "What is Autoboxing?",
+  "answer": "The **automatic conversion** performed by the compiler from a **primitive type to its corresponding wrapper class object** (e.g., `int` to `Integer`)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35fd"
+  },
+  "question": "What is Unboxing?",
+  "answer": "The **automatic conversion** performed by the compiler from a **wrapper class object to its corresponding primitive type** (e.g., `Integer` to `int`)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35fe"
+  },
+  "question": "What is the use of the `final` variable?",
+  "answer": "A `final` variable is a **constant**; its value cannot be changed after it has been initialized."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf35ff"
+  },
+  "question": "Can you override a `static` method? Why?",
+  "answer": "No, you cannot **override** a static method because static methods are associated with the class, not the object, and use **Compile-Time Binding**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3600"
+  },
+  "question": "What is method hiding?",
+  "answer": "When a subclass declares a **static method** with the same signature as a static method in its superclass. This is **hiding**, not overriding."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3601"
+  },
+  "question": "What is the Object class?",
+  "answer": "The **root class** of the Java class hierarchy. All classes implicitly inherit from `java.lang.Object`."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3602"
+  },
+  "question": "Which method in the Object class is often used for resource cleanup before garbage collection?",
+  "answer": "The `finalize()` method (though its use is generally discouraged in modern Java)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3603"
+  },
+  "question": "What is the difference between Composition and Inheritance?",
+  "answer": "**Inheritance** is an 'is-a' relationship (e.g., Dog **is-a** Animal). **Composition** is a 'has-a' relationship (e.g., Car **has-an** Engine)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3604"
+  },
+  "question": "What is Hierarchical Inheritance?",
+  "answer": "When **multiple subclasses inherit from a single superclass** (e.g., Car and Bike both inherit from Vehicle)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3605"
+  },
+  "question": "What is Multilevel Inheritance?",
+  "answer": "When a subclass inherits from another subclass, forming a **chain** (e.g., C inherits from B, and B inherits from A)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3606"
+  },
+  "question": "What are the limitations of Inheritance?",
+  "answer": "It can lead to **tight coupling**, increased complexity, and increased execution time due to method lookup."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3607"
+  },
+  "question": "What is the JVM?",
+  "answer": "The **Java Virtual Machine**. It is an abstract machine that provides the runtime environment in which Java bytecode can be executed."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3608"
+  },
+  "question": "What is the JRE?",
+  "answer": "The **Java Runtime Environment**. It consists of the JVM, core libraries, and other files required to **run** a Java application."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3609"
+  },
+  "question": "What is the JDK?",
+  "answer": "The **Java Development Kit**. It includes the JRE plus development tools like the compiler (`javac`) and debugger, used for **developing** Java applications."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf360a"
+  },
+  "question": "Why is Java platform-independent?",
+  "answer": "Because Java code is compiled into **bytecode**, which is executed by the JVM, and the JVM is available for various operating systems."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf360b"
+  },
+  "question": "What is an Array in terms of memory?",
+  "answer": "An array stores elements in **contiguous memory locations**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf360c"
+  },
+  "question": "What is Method Overloading an example of?",
+  "answer": "**Compile-time Polymorphism** (or Static Binding)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf360d"
+  },
+  "question": "What is Method Overriding an example of?",
+  "answer": "**Runtime Polymorphism** (or Dynamic Binding)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf360e"
+  },
+  "question": "What is a default value for an `int` instance variable?",
+  "answer": "The default value is **0**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf360f"
+  },
+  "question": "What is the default value for a `boolean` instance variable?",
+  "answer": "The default value is **false**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3610"
+  },
+  "question": "What is the default value for an object reference instance variable?",
+  "answer": "The default value is **null**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3611"
+  },
+  "question": "When is a constructor called?",
+  "answer": "When an **object is created** using the `new` keyword."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3612"
+  },
+  "question": "Can you make a class final?",
+  "answer": "Yes. A `final` class **cannot be inherited**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3613"
+  },
+  "question": "Can you make a constructor final?",
+  "answer": "No. Constructors **cannot be declared** as `final`, `static`, or `abstract`."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3614"
+  },
+  "question": "What is data abstraction achieved through in Java?",
+  "answer": "Primarily through **Abstract Classes** and **Interfaces**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3615"
+  },
+  "question": "What is the role of a ClassLoader in the JVM?",
+  "answer": "The ClassLoader is responsible for **loading, linking, and initializing** class files into memory."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3616"
+  },
+  "question": "What is an immutable object?",
+  "answer": "An object whose state **cannot be modified** after it is created (e.g., `String`, wrapper classes)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3617"
+  },
+  "question": "Can a method be both `static` and `final`?",
+  "answer": "Yes. A `static final` method can exist. Since static methods cannot be overridden, making it `final` is redundant but syntactically allowed."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3618"
+  },
+  "question": "What is operator overloading?",
+  "answer": "It's the ability to **redefine the meaning of operators** (like +, -, *) for user-defined types. Java **does not support** general operator overloading (except for `+` with Strings)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3619"
+  },
+  "question": "What is a transient variable?",
+  "answer": "A variable marked with the `transient` keyword whose value is **not persisted** during serialization."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf361a"
+  },
+  "question": "What is a volatile variable?",
+  "answer": "A variable whose value is always read directly from the **main memory** and not from the CPU cache, primarily used in **multi-threaded** programming for visibility."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf361b"
+  },
+  "question": "What is tight coupling?",
+  "answer": "A situation where one class is heavily dependent on the internal structure or implementation of another class, making changes difficult."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf361c"
+  },
+  "question": "How does OOP help solve complex problems?",
+  "answer": "By breaking down the system into **smaller, manageable, independent objects** that interact with each other, making the design clearer and easier to maintain."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf361d"
+  },
+  "question": "What is a Copy Constructor?",
+  "answer": "A constructor that creates a **new object** that is an exact copy of an existing object. (Java doesn't have a built-in one but it can be implemented)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf361e"
+  },
+  "question": "What is a 'has-a' relationship in OOP?",
+  "answer": "It represents **Composition** or **Aggregation** (e.g., A Car has an Engine)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf361f"
+  },
+  "question": "What is an 'is-a' relationship in OOP?",
+  "answer": "It represents **Inheritance** (e.g., A Dog is an Animal)."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3620"
+  },
+  "question": "Why are methods generally preferred over directly accessing instance variables?",
+  "answer": "To enforce **encapsulation** and control access/validation of the data via getters and setters."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3621"
+  },
+  "question": "What happens to static members when an object is created?",
+  "answer": "Nothing new happens; the static members are **already loaded** into memory when the class is loaded."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3622"
+  },
+  "question": "What is polymorphism in the context of a reference variable?",
+  "answer": "A **superclass reference variable** can hold a reference to an object of its **subclass**."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3623"
+  },
+  "question": "Can you call a non-static method from a static context (method)?",
+  "answer": "No, because static methods exist without an object, and non-static methods require an object instance to be called."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3624"
+  },
+  "question": "What is the role of the Garbage Collector (GC)?",
+  "answer": "The GC is a part of the JVM responsible for **automatically managing memory** by reclaiming space occupied by objects that are no longer referenced by the application."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3625"
+  },
+  "question": "What is a deeply copied object?",
+  "answer": "An object where **all nested objects** (referenced fields) are also **recursively copied**, making the new object completely independent of the original."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3626"
+  },
+  "question": "What is a shallowly copied object?",
+  "answer": "An object where only the **field values** are copied. If a field is a reference type, the **reference** is copied, meaning both objects point to the *same* nested object."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3627"
+  },
+  "question": "What is a generic class/method?",
+  "answer": "A feature that allows classes, interfaces, and methods to operate on **objects of various types** while maintaining **type safety** at compile time."
+},
+{
+  "_id": {
+    "$oid": "6900925bd2ef72332dbf3628"
+  },
+  "question": "What is exception handling related to OOP?",
+  "answer": "It allows a program to **gracefully handle runtime errors** by catching and managing exceptions that break the normal flow, which aligns with building robust systems."
+}]
